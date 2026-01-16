@@ -1,0 +1,18 @@
+# Dependencies
+node_modules/
+npm-debug.log*
+
+# Environment
+.env
+.env.local
+.env.development.local
+.env.production.local
+
+# Uploads
+uploads/
+backend/uploads/
+frontend/build/
+
+# OS
+.DS_Store
+Thumbs.db
