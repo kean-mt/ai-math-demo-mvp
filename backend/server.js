@@ -24,6 +24,8 @@ const cleanJSON = (rawStr) => {
     .trim();
 };
 
+const PORT = process.env.PORT || 3001;
+
 // ✅ Health Check
 app.get('/api/health', (req, res) => {
   console.log('🏥 Health check OK');
@@ -332,7 +334,7 @@ app.post('/api/generate-mcq', async (req, res) => {
 });
 
 
-app.listen(3001, () => {
+app.listen(PORT, () => {
   console.log('✅ 🚀 Mistral OCR Backend: http://localhost:3001');
   console.log('🔍 測試: curl http://localhost:3001/api/health');
   console.log('📸 OCR 測試: 上傳學生手寫答案照片');
